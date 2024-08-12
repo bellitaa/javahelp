@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Carolina</title>
+    <style>
+     body{
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #EFF8E2;
+        text-align: left;
+        margin:70px;
+        display: block;
+        justify-content: center;
+            align-items: center;
+
+
+}
+h1{
+            text-align: center;
+            color: #4B88A2;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h2{
+            text-align: center;
+            color: #A07178;
+            font-family: 
+            src: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        
+        input{
+       width: 100%;
+       padding: 10px;
+       border: 1px solid #333;
+       box-sizing: border-box;
+        }
+        h4{
+            text-align:left
+        }
+        
+
+
+
+    </style>
+    
+    <h1>Pilares da Orientação a Objetos</h1> 
+    <p> Neste site, você encontrará informações básicas para começar a entender a POO, principalmente se estiver iniciando na área da programação.
+        Você terá tópicos como definição da POO, questões recorrentes e explicações de cada um dos pilares.
+    </p>
+   
+
+   
+</head>
+ 
+<body>
+       <h4> O que significa POO?</h4>
+    <p> Os pilares da orientação a objetos são modos para estruturar a programação, vindo para revolucionar o desenvolvimento de software, introduzindo o conceito dos objetos como modelagem de sistemas.
+        Ele organiza o código em torno de objetos que são instâncias de classes. Esses objetos encapsulam dados (atributos) e comportamentos (métodos), e interagem entre si para realizar tarefas complexas. 
+    </p>
+    
+    
+    <h2> Encapsulamento  </h2>
+    <p> Basicamente, é o processo de esconder todos os detalhes de um
+        objeto que não contribuem para as suas características essenciais.
+       <br> Por exemplo, o modo como você freia o carro, é limitado, apenas
+        pisa no freio e ele para. Se fosse aberto esse sistema de controle,
+        poderia ser facilmente manipulado, causando erros não previstos.</p>
+        <br> <img src="encapsulamento.png" alt="">
+
+       
+        <h2> Herança</h2>
+        <p> A Herança possibilita o compartilhamento das classes para seus atributos, métodos e outros membros da classe. Ela possui dois tipos de classe, Classe Base e a Classe Derivada:
+        <br>   <div> ° Classe Base: Possui as características que as outras classes herdarão.</div> 
+          <div>  ° Classe Derivada: Classe que herda as características da classe base.</div>
+            Com essa herança de classes sendo transmitida, permite e assegura que os programas orientados a objetos cresçam de forma linear sem complexidade, não possuindo interações imprevisíveis pois já foram previamente herdadas. Uma classe derivada necessita apenas definir as características que a tornam única.
+            Exemplo: Uma classe base pode ser definida por classe Pessoa com os campos Nome e Idade. Já na classe derivada pode ser chamada de Funcionário com os campos salário e cargo.
+            </p>
+            <br> <img src="herança.png" alt="">
+
+            
+            <h2> Polimorfismo</h2>
+            <p>O polimorfismo permite que um mesmo método possa ter diferentes comportamentos dependendo do objeto que o invoca. Por exemplo, imagine uma classe base chamada Animal com um método fazerSom(). Classes derivadas como Cachorro e Gato podem implementar esse método de maneiras diferentes.</p>
+             <br><img src="polimorfismo.png" alt="" >
+             <h2> Abstração</h2>
+             <p>A abstração é implementada por meio de classes, que são modelos que descrevem os atributos e comportamentos comuns de um grupo de objetos. <br>Por exemplo, considere uma classe Carro. Neste exemplo, a classe Carro abstrai as características e comportamentos comuns a todos os carros, como marca, modelo, ano, e os métodos acelerar() e frear().</p>
+              <br><img src="abstraçao.png" alt="" >
+
+             <h2>Analogias para Facilitar a Compreensão </h2>
+             <p>Para o pilar do Encapsulamento, pode-se utilizar a analogia do carro, onde acelerar é colocado como um método e pode conter atributos (características) que contém outros métodos como o tanque de gasolina e o mecanismo de injeção de combustível. <div>Se alguns desses comportamentos e características ficarem visíveis, serão facilmente modificáveis, como o mecanismo de aceleração, dará certa liberdade e abertura para alterações, podendo resultar em erros imprevisíveis.
+                “Nessa analogia, uma pessoa pode não estar satisfeita com a aceleração do carro e modifica a forma como ela ocorre, criando efeitos colaterais que podem fazer o carro nem andar, por exemplo. Mas então, como sabemos como o nosso carro acelera? É simples: não sabemos.<div> Nós só sabemos que para acelerar, devemos pisar no acelerador e de resto o objeto sabe como executar essa ação sem expor como o faz. Dizemos que a aceleração do carro está encapsulada, pois sabemos o que ele vai fazer ao executarmos esse método, mas não sabemos como - e na verdade, não importa para o programa como o objeto o faz, só que ele o faça.
+              <br>  O mesmo vale para atributos. Por exemplo: não sabemos como o carro sabe qual velocidade mostrar no velocímetro ou como ele calcula sua velocidade, mas não precisamos saber como isso é feito. Só precisamos saber que ele vai nos dar a velocidade certa” (alura.com.br). <div>
+                <br> Já no pilar da Herança, imagine que você tem uma família onde os pais passam características para os filhos. 
+                <div>Por exemplo, se o pai tem olhos azuis e a mãe tem cabelo castanho, os filhos podem herdar essas características. Na POO, uma classe “pai” (superclasse) pode passar atributos e métodos para uma classe “filho” (subclasse). Assim, a subclasse herda as propriedades e comportamentos da superclasse.
+               <br> Para o pilar Polimorfismo, imagine uma orquestra com diferentes instrumentos musicais, como piano, violino e flauta.Todos esses instrumentos têm um método comum chamado tocar(), mas cada um produz um som diferente quando esse método é chamado.<div>Na POO, o método tocar() é polimórfico porque, dependendo do instrumento (objeto) que o invoca, ele se comporta de maneira diferente.
+                Para o último pilar da Abstração, magine um mapa de uma cidade. O mapa não mostra cada detalhe, como todas as árvores ou cada pessoa andando nas ruas. Em vez disso, ele mostra apenas os elementos essenciais, como ruas, edifícios importantes e pontos de interesse. Na POO, a abstração funciona de maneira semelhante, focando apenas nos atributos e comportamentos essenciais de um objeto, ignorando os detalhes desnecessários.
+                </p>
+                <h2> Questões comuns e Respostas</h2>
+                <h3>1. O que é Programação Orientada a Objetos (POO)? </h3>
+                <p>Resposta: POO é um paradigma de programação que utiliza “objetos” para representar dados e métodos. Esses objetos são instâncias de classes, que definem os atributos e comportamentos dos objetos.</p>
+                <h3>2. O que é uma classe?</h3>
+                <p>Resposta: Uma classe é um modelo ou blueprint que define as propriedades (atributos) e comportamentos (métodos) de um objeto. Por exemplo, uma classe Carro pode ter atributos como marca, modelo e ano, e métodos como acelerar() e frear().</p>
+                <h3>3. O que é um objeto?</h3>
+                <p>Resposta: Um objeto é uma instância de uma classe. Ele representa uma entidade específica com atributos e comportamentos definidos pela classe. Por exemplo, um objeto meuCarro da classe Carro pode ter marca = "Toyota" e modelo = "Corolla".</p>
+
+                 <h1> SAIBA MAIS!</h1>
+    <li> https://www.alura.com.br/artigos/poo-programacao-orientada-a-objetos?srsltid=AfmBOopD3GexcUDkjQp1BIfwt5-VQLAK4PI6P5WJCekzHOCoGLfIW1PM">https://www.alura.com.br/artigos/poo-programacao-orientada-a-objetos?srsltid=AfmBOopD3GexcUDkjQp1BIfwt5-VQLAK4PI6P5WJCekzHOCoGLfIW1PM</li>
+                 <li> https://www.youtube.com/watch?v=f-aDDLRmugU</li>
+                 <li>https://www.devmedia.com.br/os-4-pilares-da-programacao-orientada-a-objetos/9264</li>
+                 <li>https://meuartigo.brasilescola.uol.com.br/informatica/programacao-orientada-objetos.htm</li>
+                <li>https://academiatech.blog.br/o-que-e-programacao-orientada-a-objetos/</li> <br>
+               <br> <form action="www.destino.com" method="post">
+                    <h2>Ainda está com dúvidas? Envie para nós!</h2>
+                    <div class=" form group">
+                        <label for="Dúvida"> </label>
+                        <input type="text"  id="dúvida" placeholder="Escreva sua dúvida aqui" >
+                    </div>
+                    <div class="form-group">
+                    
+                        <button type="submit"> Enviar</button>
+                    </div>
+        
+
+</body>
+</html>
